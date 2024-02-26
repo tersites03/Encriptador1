@@ -12,7 +12,11 @@
 </head>
 
 <body>
-    <main class="main">
+    <header class="header" id="header">
+        <img src="img/Logo-1.png" alt="Logo de Alura" id="logo" class="logo">
+    </header>
+    
+    <main class="main">        
 
     <div class="contenedor1">   
         <div class="contenedor_TextoAEncriptar">
@@ -26,17 +30,22 @@
         </div>
 
         <div  class="botones">                
-            <button id="btn-Ecnriptar" class="btn_Encriptar">Encriptar</button>
-            <button id="btn-desencriptar" class="btn_Desencriptar">Desencriptar</button>
+            <button id="btn-Ecnriptar" class="btn_Encriptar" type="button" onclick="encriptar()">Encriptar</button>
+            <button id="btn-desencriptar" class="btn_Desencriptar" type="button" onclick="desencriptar()">Desencriptar</button>
         </div>
     </div>
 
     <div class="contenedor2">
         <div class="Contenedor-A-desencriptar">
+            <img src="img/Muñeco.png" alt="personaje buscador" id="personaje" class="personaje">
+            <div id="contenedorMensaje" class="contenedor_mensaje">
+                <h2 id="mensaje_1" class="mensaje1">Ningún mensaje encontrado</h2>
+                <p id="parrafo" class="parrafo">Ingresa el texto que deseas encriptar o desencriptar</p>
+            </div>
             <textarea  id="texto_A_Desencriptar"  class="texto_A_Desencriptar"></textarea>
         </div>
         <div id="contenedor_btnCopiar" class="contenedor-btnCopiar">
-            <button id="btnCopiar" class="btn_Copiar">Copiar</button>
+            <button id="btnCopiar" class="btn_Copiar" type="button" onclick="copiar()">Copiar</button>
         </div>
     </div>
 
