@@ -131,3 +131,16 @@ main{
     width: 24.5%;
     padding: 1.8%;
 }
+.textoDesencriptado{
+position: absolute;
+width: 30%;
+height: 90%;
+left: 60%;
+top: 5%;
+display: flex;
+justify-content: center;
+border-radius: 32px;
+background-color: rgba(0,0,0,0.08);
+
+
+}
