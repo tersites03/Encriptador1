@@ -3,7 +3,7 @@
     margin: 0;
     font-family: "inter", "sans-serif";
 }
-
+/*Reseteo de los estilos del HTMl*/
 body{
     width: 100vh;
     height: 100vh;
@@ -12,19 +12,21 @@ body{
     justify-content:center;
     background-color: #F4F4FC;
     
-}
+}/*tamaño del body, dirección de los elementos dentro del contenedor, tipo de display y fondo*/
 header{
     width: 100%;
     height:  64px;
     position: relative;
     display: flex;
 }
+/*posición del contenedor, conrespecto a su conetendor padre. Tamaño del contenedor y como deben colocarse los elementos dentro del mismo*/
 .logo{
     width: 45px;
     height: 50px;
     padding-left: 20px;
     padding-top: 20px;
 }
+/*Tamaño del contenedor, espacio entre los elementos contenidos y el borde del contenedor*/
 main{
     background-color:#F3F5FC;
     width: 100%;
@@ -33,6 +35,7 @@ main{
     display: flex;
     justify-content: space-between;
 }
+/* position: relative; (posición del contenedor, conrespecto a su conetendor padre). Tamaño del contenedor y como deben los elementos rellenar el espacio dentro del mismo,  */
 .textArea1{
     position: absolute;
     width: 42%;
@@ -131,19 +134,21 @@ main{
     width: 24.5%;
     padding: 1.8%;
 }
-.textoDesencriptado{
-position: absolute;
-width: 30%;
-height: 90%;
-left: 60%;
-top: 5%;
-display: flex;
-justify-content: center;
-border-radius: 32px;
-background: #ffffff;
-box-shadow:(0,0,0,0.08);
-border: none;
+
+.contenedor2{
+    position: absolute;
+    width: 30%;
+    height: 90%;
+    left: 60%;
+    top: 5%;
+    display: flex;
+    justify-content: center;
+    border-radius: 32px;
+    background: #ffffff;
+    box-shadow:(0px,24px,32px,-8px rgba(0, 0, 0, a0,08));
+    border: none;
 }
+
 .mensaje1{
     display: flex;
     flex-direction: column;
@@ -158,4 +163,57 @@ border: none;
     font-weight: 400;
     font-size: 32px;
     
+}
+.contenedor_mensaje{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    gap: 16px;
+    top:65%;
+    text-align: center;
+}
+.contenedor_mensaje h2{
+    width: 60%;
+    font-family: "Inter"  ,  sans-serif ;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: #323a40;
+}
+
+.contenedor_mensaje p{
+    width: 80%;
+    font-family: "Inter"  ,  sans-serif ;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+}
+.contenedor2 img{
+    position: absolute;
+    width: 80%;
+    height: 50%;
+    top: 15%;
+}
+/*Diseño responsibo*/
+@media(max-width: 57.7em){
+    .main{
+        display: flex;
+        flex-direction: row;
+    }
+    .contenedor1{
+        width: 100%;
+    }
+
+
+
+
 }
