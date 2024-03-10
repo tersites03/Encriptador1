@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -18,34 +18,31 @@
     
     <main class="main">        
 
-    <div class="contenedor1">   
-        <textarea id="txtArea-1" class="textArea1" placeholder="Ingrese su texto para desencriptar"></textarea>
-        
-        <div class="alerta">
-            <img class="alerta_Imagen" src="img/bi_exclamation-circle-fill-1.png" alt="signo de exclamación">
-            <p class="advertencia">solo letras minusculas sin acentos</p>
-        </div>
-
-        <div  class="botones">                
-            <button id="btn-Ecnriptar" class="btn_Encriptar" type="button" onclick="encriptar()">Encriptar</button>
-            <button id="btn-desencriptar" class="btn_Desencriptar" type="button" onclick="desencriptar()">Desencriptar</button>
-        </div>
-    </div>
-
-    <div class="contenedor2">
-        <img src="img/Muñeco.png" alt="personaje buscador" id="personaje" class="personaje">
-        <div id="contenedorMensaje" class="contenedor_mensaje">            
-            <h2 id="mensaje_1" class="mensaje1">Ningún mensaje fue encontrado</h2>
-            <p id="parrafo" class="parrafo">Ingresa el texto que deseas encriptar o desencriptar</p>
-            <textarea  id="texto_Desencriptado"  class="textoDesencriptado"></textarea>
-        </div>
+        <section class="seccion1">   
+            <textarea id="text-area" class="textArea" cols="30" rows="10"  placeholder="Ingrese su texto para Aqui"></textarea>
             
+            <div class="condiciones">
+                <img src="img/bi_exclamation-circle-fill-1.png" alt="signo de exclamación">
+                <p>solo letras minusculas sin acentos</p>
+            </div>
 
+            <div  class="botones">                
+                <button id="btn-Ecnriptar" class="btn_Encriptar" type="button" onclick="encriptar()">Encriptar</button>
+                <button id="btn-desencriptar" class="btn_Desencriptar" type="button" onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </section>
 
-        <div id="contenedor_btnCopiar" class="contenedor-btnCopiar">
-            <button id="btnCopiar" class="btn_Copiar" type="button" onclick="copiar()">Copiar</button>
-        </div>
-    </div>
+        <section class="seccion2">
+            <textarea  id="textArea-Encriptado"  class="textAreaEncriptado" cols="20" rows="10"></textarea> 
+            <div id="contenedorMensaje" class="mensajes">
+                <h2 id="mensaje_1" class="mensaje1">Ningún mensaje fue encontrado</h2>
+                <p id="parrafo" class="mensaje2">Ingresa el texto que deseas encriptar o desencriptar</p>
+            </div>
+
+            <div class="contenedor-btnCopiar">
+                <button id="btnCopiar" class="btn_Copiar" type="button" onclick="copiar()">Copiar</button>
+            </div>
+        </section>
 
     </main>
     <footer class="pie_De_Pagina">
@@ -54,9 +51,9 @@
             <p class="fecha_y_Lugar">Argentina  <br> Buenos Aires <br> 25/02/2024</p>            
         </div>
         <div class="redes_sociales">
-
         </div>
     </footer>
+
     <script src="app.js"></script>   
 </body>
 </html>

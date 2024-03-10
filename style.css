@@ -1,219 +1,123 @@
 *{
-    padding: 0;
+    padding:0;
     margin: 0;
-    font-family: "inter", "sans-serif";
+    font-family: "inter", "sans-serif";   
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 150%;    
+    background-color:#F3F5FC;
 }
-/*Reseteo de los estilos del HTMl*/
-body{
+/*body{
     width: 100vh;
     height: 100vh;
     display:flex;
     flex-direction: column;
     justify-content:center;
-    background-color: #F4F4FC;
-    
-}/*tamaño del body, dirección de los elementos dentro del contenedor, tipo de display y fondo*/
+    background-color: #F4F4FC;    
+}*/
 header{
-    width: 100%;
-    height:  64px;
+    width: 100%;    
     position: relative;
     display: flex;
 }
-/*posición del contenedor, conrespecto a su conetendor padre. Tamaño del contenedor y como deben colocarse los elementos dentro del mismo*/
 .logo{
-    width: 45px;
+    width: 10%;
     height: 50px;
     padding-left: 20px;
-    padding-top: 20px;
+    padding-top: 5px;
+    margin-left: 10px;
 }
-/*Tamaño del contenedor, espacio entre los elementos contenidos y el borde del contenedor*/
 main{
-    background-color:#F3F5FC;
+    margin-bottom: 50px;
+    margin-left: 80px;   
     width: 100%;
     height:100%;    
     position:relative;
     display: flex;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
 }
-/* position: relative; (posición del contenedor, conrespecto a su conetendor padre). Tamaño del contenedor y como deben los elementos rellenar el espacio dentro del mismo,  */
-.textArea1{
-    position: absolute;
-    width: 42%;
-    height: 60%;
-    left: 12%;
-    top:15%;
-    border:none;
-    font-family: "Inter", sans-serif;
-    font-style: normal;
-    font-size: 32px;
-    font-weight: 400;
-    line-height: 150%;
-    background-color: #F4F4FC;
-    cursor: pointer;
+.seccion1{
+    width: 50%;
 }
-.textArea1::placeholder{
-    color:#0a3871;
-}
-.textArea1:focus,
-.textArea1:active {
-    outline: none;
+.textArea{
     border: none;
+    color: #0A3871;
+    margin-top: 98px;
+    text-transform: lowercase;
 }
-.alerta{
-    position: absolute;
-    width: 80%;
-    top: 80%;
-    left: 12%;
-    display:flex;
-    flex-direction: row;
-    padding: 0px;
-    gap: 8px;
-    align-items: center;
+::placeholder{
+    color: #0A3871;}
+    .textArea :focus{ outline: none;}
 
+    .seccion2{
+        width: 20%;
+        display: flex;
+        flex-direction: column; 
+        position: relative;
+        border-radius: 32px;
+        background: #ffffff;     
+    }
+    .mensajes{
+        top: 70%;
+        display: flex;
+        flex-direction: column;
+    }
+.textAreaEncriptado{
+    background: white;
+    background-image: url("./img/Muñeco.png");
+    background-repeat: no-repeat;
+    border-radius: 24px;
+    border:none;
+    margin-top: 20px;
+    margin-left: 98px;
+    padding-left: 20px;
+    position: relative;   
 }
-.alerta p{
-    font-family: "Inter", sans-serif;
-    font-style: normal;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 150%;
-    color: #495057;
-    opacity: 0.8;
-    flex: none;
-    flex-grow: 0;
-    order: 1;
+.textAreaEncriptado :focus{
+outline: none;
 }
 .botones{
-    width: 80%;
-    left: 12%;
-    top: 82%;
-    padding: 1% 0;
-    position: absolute;
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+    margin-top: 18px;
 }
 .btn_Encriptar{
-    width: 25%;
-    padding: 2%;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
     background-color: #0a3871;
     border-radius: 24px;
-    font-family: "Inter";
-    font-style: normal;
-    font-size: 18px;
-    line-height: 19px;
-    text-align: center;
+    border: 1px solid #0A3871; 
     color: #ffffff;
+    height: 67px;
+    width: 328px;
+    cursor: pointer;
 }
 .btn_Desencriptar{
-    width: 25%;
-    padding: 2%;
-    gap: 8px;
     background-color: #d8dfe8;
-    box-sizing: border-box;
-    border: 1px solid;
     border-radius: 24px;
+    border: 1px solid #0A3871; 
+    color: #0A3871;
+    height: 67px;
+    width: 328px;
+    margin-left: 30px;
+    cursor: pointer;
+
+}
+.contenedor-btnCopiar{
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: center;
-    font-family: "Inter";
-    font-weight: 400;
-    font-style: normal;
-    font-size: 18px;
-    line-height: 19px;
-    text-align: center;
+    margin-top: 18px;
+}
+.btn_Copiar{
+    border: 1px solid #0a3871;
+    border-radius: 24px;
     color: #0a3871;
-}
-.btn_Encriptar:hover,
-.btn_Desencriptar:hover{
-    margin: 0.3%;
-    width: 24.5%;
-    padding: 1.8%;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 108px;
+    margin-top: 402px;
+    width: 336px;
+    position: absolute;
 }
 
-.contenedor2{
-    position: absolute;
-    width: 30%;
-    height: 90%;
-    left: 60%;
-    top: 5%;
-    display: flex;
-    justify-content: center;
-    border-radius: 32px;
-    background: #ffffff;
-    box-shadow:(0px,24px,32px,-8px rgba(0, 0, 0, a0,08));
-    border: none;
-}
 
-.mensaje1{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    position: absolute;
-    top:65%;
-    justify-content: center;
-    padding:1%;
-    gap: 1rem;
-    text-align: center;
-    font-family: "Inter" ,  sans-serif ;
-    font-weight: 400;
-    font-size: 32px;
-    
-}
-.contenedor_mensaje{
-    width: 100%;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 1%;
-    gap: 16px;
-    top:65%;
-    text-align: center;
-}
-.contenedor_mensaje h2{
-    width: 60%;
-    font-family: "Inter"  ,  sans-serif ;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 120%;
-    text-align: center;
-    color: #323a40;
-}
-
-.contenedor_mensaje p{
-    width: 80%;
-    font-family: "Inter"  ,  sans-serif ;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
-    text-align: center;
+.condiciones{
     color: #495057;
-}
-.contenedor2 img{
-    position: absolute;
-    width: 80%;
-    height: 50%;
-    top: 15%;
-}
-/*Diseño responsibo*/
-@media(max-width: 57.7em){
-    .main{
-        display: flex;
-        flex-direction: row;
-    }
-    .contenedor1{
-        width: 100%;
-    }
-
-
-
-
+    font-size: 18px;
 }
