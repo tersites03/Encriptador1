@@ -1,5 +1,5 @@
 function encriptar(){
-    let texto = document.getElementById("text-area").value;
+    let texto = document.getElementById("textArea").value;
     let tituloMensaje = document.getElementById("mensaje_1");
     let parrafo = document.getElementById("parrafo");
 
@@ -12,7 +12,7 @@ function encriptar(){
    
    
     if (texto.length != 0){
-        document.getElementById("text-area").value = textocifrado;
+        document.getElementById("textArea").value = textocifrado;
         document.getElementById("mensaje_1").textContent="Texto encriptado con éxito";
         document.getElementById("parrafo").textContent = "";
     } else{
@@ -22,8 +22,9 @@ function encriptar(){
     }
 }
 
+
 function desencriptar(){
-    let texto = document.getElementById("text-area").value;
+    let texto = document.getElementById("textArea").value;
     let tituloMensaje =  document.getElementById("mensaje_1");
     let parrafo = document.getElementById("parrafo");
 
@@ -36,7 +37,7 @@ function desencriptar(){
         .replace(/ufat/gi, "u");
         
         if (texto.length != 0){
-            document.getElementById("text-area").value = textocifrado;
+            document.getElementById("textArea").value = textocifrado;
             document.getElementById("mensaje_1").textContent="Texto desencriptado con éxito";
             document.getElementById("parrafo").textContent = "";}
             else{
@@ -47,3 +48,8 @@ function desencriptar(){
 
 }
 
+function copiar() {
+    textArea.select()
+    navigator.clipboard.writeText(textArea.value)
+    alert("Texto copiado de forma exitosa ");
+}
