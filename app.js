@@ -49,3 +49,7 @@ function desencriptar() {
         swal("Ooops!", "Debes ingresar un texto", "warning");
     }
 }
+function btn_copiar() {
+    mensaje.select()
+    navigator.clipboard.writeText(mensaje.value)
+    alert("Texto copiado de forma exitosa ");

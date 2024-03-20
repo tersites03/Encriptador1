@@ -207,14 +207,9 @@ header {
   border-radius: 24px;
 }
 .btn-copiar:hover{
-  cursor: pointer;
   margin: 0.3%;
-  width: 2.9em;
+  width: 24.5%;
   padding: 1.8%;
-  text-align: center;
-  font-size: 18px;
-  line-height: 19px;
-
 }
 
 footer{
